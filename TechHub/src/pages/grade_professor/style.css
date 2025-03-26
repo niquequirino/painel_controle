@@ -1,0 +1,209 @@
+@import url(../style/global.css);
+
+body {
+    font-family: Inter;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+
+}
+
+p1 {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 200px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.header h1 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin: 0;
+    margin-left: 500px;
+}
+
+.filters {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    
+}
+
+.filter-button, .filter-select {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 30px; 
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: #5E5E5E; 
+    color: #fff; 
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filter-select {
+    padding: 10px 20px;
+    background-color: #D5D5D5; 
+    color: #333; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+     border-collapse: collapse; /*isso serva para que o topo da grade (os titulos), fiquem juntos */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #363636; 
+ 
+}
+
+th {
+    background-color: #AD0B12;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header img {
+        margin-bottom: 10px;
+    }
+
+    .header h1{
+        margin-left: 150px;
+        margin-top: 30px;
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-button {
+        width: 108px;
+        
+    }
+
+    .filter-select{
+        width: 108px;
+        height: 40px;
+        margin-top: -40px;
+    }
+
+    table {
+        font-size: 14px;
+        display: block; 
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .header h1{
+        margin-left: 90px;
+        margin-top: 30px;
+    }
+
+    .filter-select{
+        width: 108px;
+        height: 40px;
+        margin-top: -40px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    .time-name{
+        background-color: #AD0B12;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+        font-weight: bold;
+    }
+
+    td:nth-of-type(1):before { content: "Horário"; }
+    td:nth-of-type(2):before { content: "Segunda"; }
+    td:nth-of-type(3):before { content: "Terça"; }
+    td:nth-of-type(4):before { content: "Quarta"; }
+    td:nth-of-type(5):before { content: "Quinta"; }
+}
