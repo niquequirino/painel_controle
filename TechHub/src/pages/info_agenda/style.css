@@ -1,0 +1,146 @@
+@import url(../style/global.css);
+
+body {
+    font-family: Inter;
+    background-color: #fff;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background-color: #a50000;
+}
+
+.header img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+p1 {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 200px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    border-bottom: 3px solid #a50000;
+    padding-bottom: 5px;
+    position: relative;
+    border-bottom: none;
+
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 900px;
+    height: 4px;
+    background-color: #a50000;
+    position: absolute;
+    bottom: 0;
+    left: -250px;
+}
+
+.inicio-link {
+    color: #a50000;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.inicio-link:hover {
+    text-decoration: underline;
+}
+
+.info-sala p {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: absolute;
+    top: 290px;
+    left: 60px;
+    font-size: 24px;
+}
+
+.info-sala p2 {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: absolute;
+    top: 350px;
+    left: 60px;
+    font-size: 24px;
+}
+
+.info {
+    font-weight: 600;
+    margin-right: 5px;
+    font-size: 28px;
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+
+
+.bullet {
+    color: #a50000;
+    font-size: 1.5em;
+    margin-right: 8px;
+
+}
+
+.sala-foto-container {
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    top: 180px;
+    left: 75%;
+    background-color: #D9D9D9;
+}
+
+.button-editar {
+    background-color: #a50000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    height: 45px;
+    width: 120px;
+    margin-top: 400px;
+    position: absolute;
+    left: 60px;
+}
